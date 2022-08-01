@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades mas usadas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .card {
+            width: 250px;
+            height: fit-content;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px 1px;
+            margin: auto;
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .card img {
+            width: 100%;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .nombre {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .card ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px 0;
+        }
+
+        .card li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .social button {
+            width: 100%;
+            background-color: whitesmoke;
+            border: none;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+
+        .social button p:nth-child(1) {
+            font-weight: bold;
+        }
+
+        .follow {
+            width: 100%;
+            height: 50px;
+            border: none;
+            background-color: green;
+            color: white;
+            font-size: larger;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="panda-icon.jpg" alt="panda image">
+        <div class="fullname">
+            <p class="nombre">Fernando Nicolas</p>
+            <p class="apellido">Carrillo Lopez</p>
+        </div>
+        <section>
+            <ul>
+                <li><a href="#">España</a></li>
+                <li><a href="#">Correo</a></li>
+            </ul>
+        </section>
+
+        <section class="social">
+            <button class="followers">
+                <p>3000</p>
+                <p>Seguidores</p>
+            </button>
+            <button class="following">
+                <p>3000</p>
+                <p>Siguiendo</p>
+            </button>
+        </section>
+        <button class="follow">
+            Seguir
+        </button>
+    </div>
+</body>
+
+</html>
